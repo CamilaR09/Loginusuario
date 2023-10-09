@@ -3,4 +3,34 @@
 
     <!-- string con la pantalla de Intro -->
 
+    <string name="tituloIntro">MovieTrixt</string>
+    <string name="descripcion">Descárgala para ver pelis y series \n sin conexión \n estés donde estés</string>
+    <string name="btnS">Start</string>
+
+    <!-- string con la pantalla de Login -->
+
+    <string name="tituloLogin">Log In</string>
+    <string name="Editextuser">Username</string>
+    <string name="EditextPass">Password</string>
+    <string name="PassOl">Forgot Your Password?</string>
+    <string name="btnlogin">Login</string>
+    <string name="crearC">Don\'t have an account?  SingUP</string>
+
+    <!-- string con la pantalla de Login -->
+
+    <string name="tituloSignup">Log In</string>
+    <string name="Editextcorreo">Username</string>
+    <string name="btnsignup">Sing Up</string>
+    <string name="Yacuenta">Already have an account? Login</string>
+
+    <!-- string con la pantalla de Main -->
+
+    <string name="Titulomain">Qué te gustaría ver?</string>
+    <string name="textbuscador">Buscar Películas ...</string>
+    <string name="txt1">Nuevas Películas</string>
+    <string name="txt2">Próximas Películas</string>
+
+
+
+
 </resources>

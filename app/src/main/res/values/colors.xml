@@ -3,6 +3,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_background">#19191b</color>
-    <color name="pink">#e45eb0</color>
+    <color name="pink">#EC0FA3</color>
     <color name="green">#34e3c4</color>
+    <color name="amarillo">#ffc107</color>
+    <color name="azul">#1CBFE3</color>
+    <color name="rojo">#D80941</color>
+    <color name="Gris">#282d32</color>
+    <color name="Negro1">#19191b</color>
+    <color name="Gris1">#4a19191b</color>
+
+
+
+
+
+
 </resources>
