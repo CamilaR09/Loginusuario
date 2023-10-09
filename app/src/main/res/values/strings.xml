@@ -19,7 +19,7 @@
     <!-- string con la pantalla de Login -->
 
     <string name="tituloSignup">Log In</string>
-    <string name="Editextcorreo">Username</string>
+    <string name="Editextcorreo">Email</string>
     <string name="btnsignup">Sing Up</string>
     <string name="Yacuenta">Already have an account? Login</string>
 

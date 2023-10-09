@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +16,8 @@ import com.example.login_usuario.R;
 
 public class SingupActivity extends AppCompatActivity {
 
-    AppCompatButton btncrear;
+    AppCompatButton btncrear, btnGuardar;
+    EditText txtNombre,txtEmail,txtPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
