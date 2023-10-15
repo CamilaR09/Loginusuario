@@ -40,7 +40,7 @@ public class IntroActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
 
 
-                Intent intent = new Intent(IntroActivity.this, LoginActivity.class);
+                Intent intent = new Intent(IntroActivity.this, Intro_btnActivity.class);
                 startActivity(intent);
                 finish();
             }

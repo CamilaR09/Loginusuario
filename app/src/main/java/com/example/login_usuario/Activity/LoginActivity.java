@@ -11,7 +11,11 @@ import android.widget.TextView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.login_usuario.DB.DbUser;
+import com.example.login_usuario.DB.entidades.Usuarios;
 import com.example.login_usuario.R;
+
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText editTextUser;
@@ -35,28 +39,28 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validarCredenciales()) {
+                String username = editTextUser.getText().toString();
+                String password = editTextPassword.getText().toString();
+
+                DbUser dbUser = new DbUser(LoginActivity.this);
+                boolean credencialesValidas = dbUser.verificarCredenciales(username, password);
+
+                if (credencialesValidas) {
+                    // Las credenciales son válidas, puedes redirigir al usuario a la pantalla principal o realizar otras acciones.
+                    Toast.makeText(LoginActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else {
+                    // Las credenciales no son válidas, muestra un mensaje de error.
                     Toast.makeText(LoginActivity.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
-
     }
-    private boolean validarCredenciales() {
-        String usuario = editTextUser.getText().toString();
-        String contraseña = editTextPassword.getText().toString();
 
-        if (usuario.equals("Cami") && contraseña.equals("123")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

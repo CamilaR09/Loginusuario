@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class DbHelper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION=1;
+public class DbHelper extends SQLiteOpenHelper  {
+    private static final int DATABASE_VERSION=2;
     private static final String DATABASE_NOMBRE="Login.db";
     public static final String TABLE_USER="t_user";
 
@@ -26,9 +26,8 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE "+TABLE_USER);
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         onCreate(sqLiteDatabase);
-
     }
 }

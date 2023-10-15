@@ -4,7 +4,7 @@
     <!-- string con la pantalla de Intro -->
 
     <string name="tituloIntro">MovieTrixt</string>
-    <string name="descripcion">Descárgala para ver pelis y series \n sin conexión \n estés donde estés</string>
+    <string name="descripcion">Descárgala para ver Peliculas y Series</string>
     <string name="btnS">Start</string>
 
     <!-- string con la pantalla de Login -->
@@ -29,8 +29,6 @@
     <string name="textbuscador">Buscar Películas ...</string>
     <string name="txt1">Nuevas Películas</string>
     <string name="txt2">Próximas Películas</string>
-
-
 
 
 </resources>
